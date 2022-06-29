@@ -1,0 +1,207 @@
+[2022-06-29 05:06:27] local.ERROR: Choice question must have at least 1 choice available. {"exception":"[object] (LogicException(code: 0): Choice question must have at least 1 choice available. at C:\\xampp\\php\\bisdak_gateway\\vendor\\symfony\\console\\Question\\ChoiceQuestion.php:36)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\console\\Concerns\\InteractsWithIO.php(208): Symfony\\Component\\Console\\Question\\ChoiceQuestion->__construct('Which user prov...', Array, NULL)
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Console\\ClientCommand.php(93): Illuminate\\Console\\Command->choice('Which user prov...', Array, NULL)
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Console\\ClientCommand.php(45): Laravel\\Passport\\Console\\ClientCommand->createPasswordClient(Object(Laravel\\Passport\\ClientRepository))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\container\\BoundMethod.php(36): Laravel\\Passport\\Console\\ClientCommand->handle(Object(Laravel\\Passport\\ClientRepository))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#9 C:\\xampp\\php\\bisdak_gateway\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#10 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#11 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\console\\Concerns\\CallsCommands.php(68): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#12 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\console\\Concerns\\CallsCommands.php(28): Illuminate\\Console\\Command->runCommand('passport:client', Array, Object(Illuminate\\Console\\OutputStyle))
+#13 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Console\\InstallCommand.php(43): Illuminate\\Console\\Command->call('passport:client', Array)
+#14 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\container\\BoundMethod.php(36): Laravel\\Passport\\Console\\InstallCommand->handle()
+#15 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#18 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#19 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#20 C:\\xampp\\php\\bisdak_gateway\\vendor\\symfony\\console\\Command\\Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 C:\\xampp\\php\\bisdak_gateway\\vendor\\symfony\\console\\Application.php(998): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 C:\\xampp\\php\\bisdak_gateway\\vendor\\symfony\\console\\Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Passport\\Console\\InstallCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\xampp\\php\\bisdak_gateway\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\xampp\\php\\bisdak_gateway\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 {main}
+"} 
+[2022-06-29 05:21:34] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:21:52] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:22:52] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:23:00] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:23:08] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:23:11] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:24:20] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:24:51] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:25:38] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:29:43] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:55:37] local.ERROR: syntax error, unexpected variable "$router" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected variable \"$router\" at C:\\xampp\\php\\bisdak_gateway\outes\\web.php:27)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#1 C:\\xampp\\php\\bisdak_gateway\\bootstrap\\app.php(120): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#2 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(14): require('C:\\\\xampp\\\\php\\\\bi...')
+#3 {main}
+"} 
+[2022-06-29 05:56:09] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
+[2022-06-29 05:56:13] local.ERROR: Unauthenticated. {"exception":"[object] (Illuminate\\Auth\\AuthenticationException(code: 0): Unauthenticated. at C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\passport\\src\\Http\\Middleware\\CheckCredentials.php:64)
+[stacktrace]
+#0 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(180): Laravel\\Passport\\Http\\Middleware\\CheckCredentials->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#1 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#2 C:\\xampp\\php\\bisdak_gateway\\vendor\\illuminate\\pipeline\\Pipeline.php(116): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#3 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#4 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#5 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(169): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#6 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(429): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(175): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\xampp\\php\\bisdak_gateway\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(112): Laravel\\Lumen\\Application->dispatch(NULL)
+#9 C:\\xampp\\php\\bisdak_gateway\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#10 {main}
+"} 
